@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Encriptado de Texto</title>
+</head>
+
+<body>
+  <header>
+    <div class="isologo">
+      <img src="img/logo.svg" alt="logo alura">
+    </div>
+    <div class="logo-alura">
+      <img src="img/logo-aluralatam-oracle.svg" alt="logo aluralatam">
+    </div>
+  </header>
+
+  <main>
+    <div class="contenedor">
+
+      <div class="Encriptador">
+        <textarea name="text_in_area" id="texto" placeholder="Ingrese el texto aqui" required></textarea>
+        
+          <div class="informacion">
+            <i class="ri-error-warning-fill"></i>
+            <p>Solo letras minúsculas y sin acentos</p>
+          </div>
+          <div class="botones">
+            <button class="btn-encriptar">Encriptar</button>
+            <button class="btn-desencriptar">Desencriptar</button>
+          </div>
+        
+      </div>
+
+      <div class="Resultado">
+        <div class="contenido_vacio" id="default">
+          <div class="contenido_vacio_imagen">
+            <img src="./img/muneco.svg" alt="Imagen de animada">
+          </div>
+          <p>Ningún mensaje fue encontrado</p>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <div class="contenido_oculto" id="resultado">
+          <textarea name="text_out_area" id="texto_out" disabled></textarea>
+          <div class="informacion">
+            <i class="ri-error-warning-fill"></i>
+            <p>Solo usar el boton Copiar</p>
+          </div>
+          <button id="copiar">Copiar</button>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+
+  <footer>
+    <div class="copy">
+      <p>Oracle+AluraLatam © 2024 | Todos los derechos reservados por DaNy3LiT0_De\/ </p>
+      <!--Siguientes hipervinculos a paginas externas-->
+      <a href="https://www.linkedin.com/in/daniel-alejandro-sarmiento/" target="_blank" class="social-link"><i
+          class="ri-instagram-fill"></i>
+        <a href="https://github.com/DaNy3LiT0" target="_blank" class="social-link"><i class="ri-github-fill"></i></a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
